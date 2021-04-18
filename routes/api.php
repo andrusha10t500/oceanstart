@@ -14,9 +14,9 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/products', 'ProductController@index');  //show all products
-Route::get('/products/{products}', 'ProductController@show');  //show all products
+Route::get('/products/{product}', 'ProductController@show');  //show all products
 Route::post('/products','ProductController@store');
 
-Route::put('/products/{products}', 'ProductController@update');
+Route::put('/products/{product}', 'ProductController@update');
 
-Route::delete('/products/{products}', 'ProductController@delete');
+Route::delete('/products/{product}', 'ProductController@delete');
