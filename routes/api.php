@@ -20,3 +20,13 @@ Route::post('/products','ProductController@store');
 Route::put('/products/{product}', 'ProductController@update');
 
 Route::delete('/products/{product}', 'ProductController@delete');
+
+Route::get('/category', 'CategoryController@index');
+
+Route::get('/category/{category}', 'CategoryController@show');
+
+Route::post('/category', 'CategoryController@store');
+
+Route::put('/category/{category}', 'CategoryController@update');
+
+Route::delete('/category', 'CategoryController@delete');
